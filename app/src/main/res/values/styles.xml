@@ -1,0 +1,19 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+
+        <!--For ripple effect-->
+        <item name="colorControlHighlight">#F44336</item>
+
+        <!--Enables windrow transition by either specifying here or in the activity-->
+        <!--<item name="windowContentTransitions">true</item>-->
+        <!--<item name="windowAllowEnterTransitionOverlap">false</item>
+        <item name="windowAllowReturnTransitionOverlap">false</item>-->
+    </style>
+
+</resources>

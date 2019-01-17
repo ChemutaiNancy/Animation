@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".RippleActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dummyClick"
+        android:background="?attr/selectableItemBackground"
+        android:padding="20dp"
+        android:text="Ripple with border"
+        android:textColor="#000000"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dummyClick"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:padding="20dp"
+        android:text="Ripple without border"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dummyClick"
+        android:background="@drawable/custom_ripple_border"
+        android:padding="20dp"
+        android:text="Custom Ripple with border"
+        android:textColor="#000000"
+        android:textSize="22sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="dummyClick"
+        android:background="@drawable/custom_ripple_borderless"
+        android:padding="20dp"
+        android:text="Custom Ripple without border"
+        android:textColor="#000000"
+        android:textSize="22sp" />
+
+
+</LinearLayout>

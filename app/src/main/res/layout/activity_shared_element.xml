@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="20dp"
+    android:background="@android:color/holo_green_dark"
+    android:id="@+id/click_reveal"
+    tools:context=".SharedElementActivity">
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:elevation="4dp"
+        android:background="#f0ce11"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ripple"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="30sp"
+        android:transitionName="ripple_shared"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/title"
+        android:layout_alignParentLeft="true">
+
+        <ImageView
+            android:id="@+id/logo_reveal"
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:layout_weight="1"
+            android:src="@drawable/face"
+            android:transitionName="logoShared"/>
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="175dp"
+            android:layout_weight="1"
+            android:src="@drawable/bus"
+            android:transitionName="profile_pic_shared"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtText"
+        android:text="EXIT[Back Press]"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:gravity="center"
+        android:text="@string/ripple"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>
